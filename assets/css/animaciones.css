@@ -1,0 +1,807 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+}
+.container {
+	width: 300px;
+	height: 300px;
+	background-image: url('./pasto.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-color: aqua; */
+}
+
+.rotar {
+	animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Desplazamiento horizontal: Mover un elemento de izquierda a derecha. */
+
+.desplazar-horizontal {
+	animation: desplazar-horizontal 2s linear infinite;
+}
+
+@keyframes desplazar-horizontal {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(200px);
+	}
+}
+
+/* Desvanecimiento: Hacer que un elemento desaparezca gradualmente. */
+
+.desvanecer {
+	animation: desvanecer 2s linear infinite alternate;
+}
+
+@keyframes desvanecer {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+/* Cambio de color: Cambiar el color de un elemento. */
+
+.cambiar-color {
+	animation: cambiar-color 2s linear infinite alternate;
+}
+
+@keyframes cambiar-color {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: blue;
+	}
+}
+
+/* Escalado: Hacer que un elemento cambie de tamaño. */
+
+.escalar {
+	animation: escalar 2s linear infinite alternate;
+}
+
+@keyframes escalar {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.5);
+	}
+}
+
+/* Pulsación: Dar la apariencia de que un elemento se está presionando. */
+
+.pulsar {
+	animation: pulsar 0.5s linear infinite alternate;
+}
+
+@keyframes pulsar {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0.8);
+	}
+}
+
+/* Balanceo: Hacer que un elemento balancee de lado a lado. */
+
+.balancear {
+	animation: balancear 2s ease-in-out infinite alternate;
+}
+
+@keyframes balancear {
+	from {
+		transform: rotate(-10deg);
+	}
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+/* Parpadeo: Hacer que un elemento parpadee. */
+
+.parpadear {
+	animation: parpadear 1s linear infinite;
+}
+
+@keyframes parpadear {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Desplazamiento vertical: Mover un elemento de arriba a abajo. */
+
+.desplazar-vertical {
+	animation: desplazar-vertical 2s linear infinite;
+}
+
+@keyframes desplazar-vertical {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(100px);
+	}
+}
+
+/* Giro en 3D: Rotar un elemento en 3D. */
+
+.giro-3d {
+	animation: giro-3d 2s linear infinite;
+}
+
+@keyframes giro-3d {
+	from {
+		transform: rotateY(0);
+	}
+	to {
+		transform: rotateY(360deg);
+	}
+}
+
+/* Desvanecimiento de entrada: Hacer que un elemento aparezca gradualmente. */
+
+.desvanecer-entrada {
+	animation: desvanecer-entrada 2s ease-in;
+}
+
+@keyframes desvanecer-entrada {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Desvanecimiento de salida: Hacer que un elemento desaparezca gradualmente al salir. */
+
+.desvanecer-salida {
+	animation: desvanecer-salida 2s ease-out;
+}
+
+@keyframes desvanecer-salida {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+/* Cambio de tamaño de fuente: Hacer que el tamaño de la fuente de un elemento cambie. */
+
+.cambiar-tamano-fuente {
+	animation: cambiar-tamano-fuente 2s linear infinite alternate;
+}
+
+@keyframes cambiar-tamano-fuente {
+	from {
+		font-size: 16px;
+	}
+	to {
+		font-size: 24px;
+	}
+}
+
+/* Plegado: Hacer que un elemento se pliegue. */
+
+.plegar {
+	animation: plegar 2s ease-in-out infinite alternate;
+}
+
+@keyframes plegar {
+	from {
+		transform: scaleY(1);
+	}
+	to {
+		transform: scaleY(0.5);
+	}
+}
+
+/* Desplazamiento de sombra: Mover la sombra de un elemento. */
+
+.desplazar-sombra {
+	animation: desplazar-sombra 2s linear infinite alternate;
+}
+
+@keyframes desplazar-sombra {
+	from {
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	}
+	to {
+		box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+	}
+}
+
+/* Desvanecimiento de color: Cambiar gradualmente el color de un elemento. */
+
+.desvanecer-color {
+	animation: desvanecer-color 2s linear infinite alternate;
+}
+
+@keyframes desvanecer-color {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: yellow;
+	}
+}
+
+/* Sacudida: Hacer que un elemento se sacuda. */
+
+.sacudir {
+	animation: sacudir 0.5s ease-in-out infinite;
+}
+
+@keyframes sacudir {
+	0% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-5px);
+	}
+	50% {
+		transform: translateX(5px);
+	}
+	75% {
+		transform: translateX(-5px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/* Rebote: Hacer que un elemento rebote. */
+
+.rebotar {
+	animation: rebotar 2s ease-in infinite alternate-reverse;
+}
+
+@keyframes rebotar {
+	0%,
+	40%,
+	70%,
+	100% {
+		transform: translateY(0);
+	}
+	20% {
+		transform: translateY(-60px);
+	}
+	50% {
+		transform: translateY(-30px);
+	}
+	80% {
+		transform: translateY(-10px);
+	}
+}
+
+/* Cambiar borde: Hacer que el grosor del borde de un elemento cambie. */
+
+.cambiar-borde {
+	animation: cambiar-borde 2s linear infinite alternate;
+}
+
+@keyframes cambiar-borde {
+	from {
+		border-width: 1px;
+	}
+	to {
+		border-width: 5px;
+	}
+}
+
+/* Torsión: Dar la apariencia de torsión a un elemento. */
+
+.torcer {
+	animation: torcer 2s ease-in infinite alternate;
+}
+
+@keyframes torcer {
+	from {
+		transform: skewY(0);
+	}
+	to {
+		transform: skewY(5deg);
+	}
+}
+
+/* AFTER AND BEFORE */
+
+.cargando::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ccc;
+	border-top-color: #007bff;
+	border-radius: 50%;
+	animation: girar 1s ease-in-out infinite;
+}
+
+@keyframes girar {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+/* Burbuja de comentario: */
+
+.comentario::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #555 transparent transparent transparent;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Flecha de tooltip: */
+
+.tooltip::before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 8px 8px 0;
+	border-color: #555 transparent transparent;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Marca de verificación animada: */
+
+.verificado::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #007bff;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg);
+	animation: aparecer 0.5s ease-out;
+}
+
+@keyframes aparecer {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: rotate(-45deg) scale(1);
+	}
+}
+
+/* Punto de notificación: */
+
+.notificacion::before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	animation: parpadear 1s linear infinite;
+}
+
+@keyframes parpadear {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Efecto de brillo: */
+
+.brillo::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: brillo 2s infinite;
+}
+
+@keyframes brillo {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* Flecha desplegable: */
+
+.desplegable::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 5px 0 5px;
+	border-color: #555 transparent transparent transparent;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Icono de flecha animada: */
+
+.flecha::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #007bff transparent transparent transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(180deg);
+	animation: mover-flecha 1s infinite alternate;
+}
+
+@keyframes mover-flecha {
+	0% {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+	100% {
+		top: 40%;
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+}
+
+/* Efecto de sombra: */
+
+.sombra::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Aurora boreal: */
+
+.aurora::before {
+	content: '';
+	display: block;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background: radial-gradient(
+		circle at 50% 50%,
+		#00f 0%,
+		transparent 50%,
+		transparent 100%
+	);
+	animation: aurora 5s linear infinite;
+}
+
+@keyframes aurora {
+	0% {
+		transform: translateX(-50%) rotate(0deg);
+	}
+	100% {
+		transform: translateX(-50%) rotate(360deg);
+	}
+}
+
+/* Animaciones con ::after:
+Indicador de carga giratorio: */
+
+.cargando::after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ccc;
+	border-top-color: #007bff;
+	border-radius: 50%;
+	animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Burbuja de comentario: */
+
+.comentario::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #555 transparent transparent transparent;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Flecha de tooltip: */
+
+.tooltip::after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 8px 8px 0;
+	border-color: #555 transparent transparent;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Marca de verificación animada: */
+
+.verificado::after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #007bff;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg);
+	animation: aparecer 0.5s ease-out;
+}
+
+@keyframes aparecer {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: rotate(-45deg) scale(1);
+	}
+}
+
+/* Punto de notificación: */
+
+.notificacion::after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	animation: parpadear 1s linear infinite;
+}
+
+@keyframes parpadear {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Efecto de brillo: */
+
+.brillo::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: brillo 2s infinite;
+}
+
+@keyframes brillo {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* Flecha desplegable: */
+
+.desplegable::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 5px 0 5px;
+	border-color: #555 transparent transparent transparent;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Icono de flecha animada: */
+
+.flecha::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #007bff transparent transparent transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(180deg);
+	animation: mover-flecha 1s infinite alternate;
+}
+
+@keyframes mover-flecha {
+	0% {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+	100% {
+		top: 40%;
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+}
+
+/* Efecto de sombra: */
+
+.sombra::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Aurora boreal: */
+
+.aurora::after {
+	content: '';
+	display: block;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background: radial-gradient(
+		circle at 50% 50%,
+		#00f 0%,
+		transparent 50%,
+		transparent 100%
+	);
+	animation: aurora 5s linear infinite;
+}
+
+@keyframes aurora {
+	0% {
+		transform: translateX(-50%) rotate(0deg);
+	}
+	100% {
+		transform: translateX(-50%) rotate(360deg);
+	}
+}
+
+.card-skeleton {
+	width: 300px; /* Ajusta el ancho de la tarjeta según tus necesidades */
+	padding: 20px;
+	margin: 20px;
+	background-color: #817575;
+	border-radius: 8px;
+}
+
+.card-skeleton-image,
+.card-skeleton-text {
+	animation: pulse 3s infinite ease-in alternate;
+	width: 100%;
+	height: 20px; /* Ajusta la altura de cada línea de texto según tus necesidades */
+	border-radius: 4px;
+	margin-bottom: 10px;
+	background-image: linear-gradient(
+		to right top,
+		#2f3033,
+		#4b4b4e,
+		#68686a,
+		#878788,
+		#a7a7a7
+	);
+}
+
+.card-skeleton-image {
+	animation: pulse 3s infinite ease-in alternate;
+	height: 200px;
+}
+
+.card-skeleton-text {
+	animation: pulse 3s infinite ease-in alternate-reverse;
+}
+
+@keyframes pulse {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.2;
+	}
+}
